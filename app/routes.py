@@ -23,6 +23,14 @@ def sum(arg):
         return "Error occured!", 500
     return total
 
+@app.route('/average')
+def average():
+    data = request.args.get('data', None)
+    _list = list(map(int, data.split(',')))
+    
+    total = media(_list)
+    return 'Result= ' + str(total)
+
 def media(arg):
     total = 0
     i = 0
