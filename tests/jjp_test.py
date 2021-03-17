@@ -2,7 +2,7 @@ import unittest
 
 
 from app.routes import sum
-from app.routes import average	
+from app.routes import media	
 
 class TestSum(unittest.TestCase):
     def test_list_int(self):
