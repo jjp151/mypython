@@ -23,4 +23,16 @@ def sum(arg):
         return "Error occured!", 500
     return total
 
+def MEDIA(arg):
+    total = 0
+    i = 0
+    try:
+        for val in arg:
+            total += val
+            i +=1
+    except Exception:
+        return "Error occured!", 500
+    return total/i
+
+
 
