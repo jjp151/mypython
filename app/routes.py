@@ -23,7 +23,7 @@ def sum(arg):
         return "Error occured!", 500
     return total
 
-def MEDIA(arg):
+def media(arg):
     total = 0
     i = 0
     try:
